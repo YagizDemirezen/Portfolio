@@ -1,0 +1,78 @@
+/* Ana container */
+.educationContainer {
+  background-color: #485962;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 50px auto;
+  color: #333;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  text-align: center;
+  color: #1e90ff;
+}
+
+.education {
+  margin-bottom: 40px;
+  padding: 20px;
+  border-left: 4px solid #1e90ff;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.education:hover {
+  transform: translateY(-3px);
+}
+
+.university {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #1a73e8;
+}
+.universityLink{
+  text-decoration: none;
+}
+
+.programme {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.date {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.transcript{
+    display: inline-flex;
+    align-items: center;  
+    background-color: #1e90ff;
+    padding: 10px 20px;         /* Daha dengeli padding */
+    border-radius: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.additional{
+    font-size: 16px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.transcript:hover{
+  background-color: blue;
+  transition: 0.5s;
+}
+
+.transcript .icon{
+    margin-right: 10px;
+}

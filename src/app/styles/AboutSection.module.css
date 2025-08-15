@@ -1,0 +1,31 @@
+.mainContainer {
+  max-width: 1200px;
+  width: 90%;
+  margin: 50px auto;
+  padding: 20px 40px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  line-height: 1.5;
+  color: black;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.pText {
+  text-align: justify; /* p yerine .text class eklendi */
+  font-size: 20px;     /* pText ile birleştirilebilir */
+}
+
+.pStart {
+  font-size: 30px;
+  font-weight: 600;
+  color: #0070f3;
+  margin-right: 5px;
+}

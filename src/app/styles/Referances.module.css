@@ -1,0 +1,78 @@
+/* Ana container */
+.referancesContainer {
+  background-color: #485962;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 50px auto;
+  color: #fff; /* Metin rengini beyaz yapalım */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  text-align: center;
+  color: #1e90ff;
+}
+
+/* Liste alanı */
+.referances {
+  margin-bottom: 40px;
+  padding: 20px;
+  border-left: 4px solid #1e90ff;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.referances:hover {
+  transform: translateY(-3px);
+}
+
+/* Liste stili */
+.referances ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.referanceLink {
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #333;
+  background-color: #ffffff;
+  padding: 12px;
+  border-radius: 6px;
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.referanceLink:hover {
+  background-color: #e6f0ff;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* İsim */
+.referanceName {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1e90ff;
+}
+
+/* Unvan & bilgi */
+.referanceInformations {
+  font-size: 14px;
+  font-style: italic;
+  color: #555;
+}
+
+/* Email */
+.referanceLink a {
+  color: #1e90ff;
+  text-decoration: none;
+}
+
+.referanceLink a:hover {
+  text-decoration: underline;
+}

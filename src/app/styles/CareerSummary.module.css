@@ -1,0 +1,81 @@
+/* CareerSummary.module.css */
+
+/* Ana container */
+.careerContainer {
+  background-color: #485962;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  color: #333;
+}
+
+/* Başlık */
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  text-align: center;
+  color: #1e90ff;
+}
+
+/* Her bir iş deneyimi bloğu */
+.job {
+  margin-bottom: 40px;
+  padding: 20px;
+  border-left: 4px solid #1e90ff;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.job:hover {
+  transform: translateY(-3px);
+}
+
+/* Şirket adı */
+.company {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+.companyLink{
+  text-decoration: none;
+}
+
+/* Pozisyon */
+.position {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+/* Çalışma tarihleri */
+.date {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* Görevler listesi */
+.tasks {
+  list-style: none;
+  padding-left: 0;
+}
+
+.tasks li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 8px;
+}
+
+.tasks li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #1e90ff;
+  font-weight: bold;
+}
