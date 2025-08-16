@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Yağız Demirezen | Portföy",
   description: "Yağız'ın Kişisel Sitesi",
+  icons:{
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
