@@ -1,7 +1,7 @@
 'use client';
 import { useEffect, useState } from 'react';
 import style from '../../styles/Navbar.module.css';
-import { FiDownload, FiHome } from 'react-icons/fi';
+import { FiDownload } from 'react-icons/fi';
 import { AiOutlineHome } from 'react-icons/ai';
 
 interface NavbarProps {
@@ -10,27 +10,34 @@ interface NavbarProps {
 
 const Navbar: React.FC<NavbarProps> = ({ onScrollTo }) => {
   const [animate, setAnimate] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   // Animasyon efekti
   useEffect(() => {
     const interval = setInterval(() => {
       setAnimate(true);
-      setTimeout(() => setAnimate(false), 500); // animasyon süresi
-    }, 2500); // 2.5 saniyede bir
+      setTimeout(() => setAnimate(false), 500);
+    }, 2500);
     return () => clearInterval(interval);
   }, []);
 
   const userLang = navigator.language || navigator.language;
   const language = userLang.startsWith('tr') ? 'tr' : 'en';
 
-  const ENCV = '/YagizDemirezen_CV_EN.pdf'
-  const TRCV = '/YagizDemirezen_CV_TR.pdf'
+  const ENCV = '/YagizDemirezen_CV_EN.pdf';
+  const TRCV = '/YagizDemirezen_CV_TR.pdf';
 
   const CV = language === 'tr' ? TRCV : ENCV;
   const linkText = language === 'tr' ? 'Özgeçmişimi İndir' : 'Download CV';
 
   return (
-    <nav className={style.navbar}>
+    <nav className={`${style.navbar} ${menuOpen ? style.active : ''}`}>
+      <div className={style.hamburger} onClick={() => setMenuOpen(!menuOpen)}>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
       <div className={style.leftLinks}>
         <a className={style.navLink} onClick={() => onScrollTo('main')}><AiOutlineHome size={24}/></a>
         <a className={style.navLink} onClick={() => onScrollTo('about')}>Hakkımda</a>
