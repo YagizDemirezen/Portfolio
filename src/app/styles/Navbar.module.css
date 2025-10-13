@@ -129,6 +129,6 @@
 
   .hamburger {
     display: flex;
-    margin-left: auto;
+    margin-left: 10px;
   }
 }
