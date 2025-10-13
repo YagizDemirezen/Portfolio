@@ -84,7 +84,7 @@
   100% { transform: translateY(10%); }
 }
 
-/* Hamburger menü */
+/* Hamburger menü (mobilde göster) */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -102,26 +102,33 @@
 /* Mobil uyum */
 @media screen and (max-width: 768px) {
   .navbar {
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
     padding: 10px 20px;
   }
 
   .leftLinks {
-    display: flex; /* linkler mobilde görünür, istersen gizleyebilirsin */
-    gap: 15px;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    display: none; /* başlangıçta gizli */
   }
 
-  .cvLink {
-    display: none; /* mobilde CV butonunu gizle */
+  /* Menü açıkken göster */
+  .navbar.active .leftLinks {
+    display: flex;
   }
 
   .navLink {
     font-size: 18px;
   }
 
+  .cvLink {
+    display: none; /* mobilde CV butonunu gizle */
+  }
+
   .hamburger {
     display: flex;
-    margin-left: 0; 
+    margin-left: auto;
   }
 }
