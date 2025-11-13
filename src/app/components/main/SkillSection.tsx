@@ -11,7 +11,7 @@ const SkillSection = React.forwardRef<HTMLDivElement>((props, ref) => {
                 <a href='https://www.google.com/search?q=Fullstack+Development' target='_blank' className={styles.skillItemLink}><li className={styles.skillItem}>Fullstack Geliştirme</li></a>
                 <a href='https://www.google.com/search?q=Cyber+Security' target='_blank' className={styles.skillItemLink}><li className={styles.skillItem}>Siber Güvenlik</li></a>
                 <a href='https://www.google.com/search?q=Database+Management' target='_blank' className={styles.skillItemLink}><li className={styles.skillItem}>Veritabanı Yönetimi</li></a>
-                <a href='https://www.google.com/search?q=Backend+as+a+Service' target='_blank' className={styles.skillItemLink}><li className={styles.skillItem}>Servis Olarak Arka Uç (BaaS)</li></a>
+                <a href='https://www.google.com/search?q=Mobil+Uygulama+Geliştirme' target='_blank' className={styles.skillItemLink}><li className={styles.skillItem}>Mobil Uygulama Geliştirme</li></a>            
               </ul>
           </div>
           <div className={styles.skillColumn}>
@@ -25,7 +25,7 @@ const SkillSection = React.forwardRef<HTMLDivElement>((props, ref) => {
           <div className={styles.skillColumn}>
               <ul>
                 <a href='https://www.google.com/search?q=Project+Planning' target='_blank' className={styles.skillItemLink}><li className={styles.skillItem}>Proje Planlama</li></a>
-                <a href='https://tr.wikipedia.org/wiki/Yaz%C4%B1l%C4%B1m_testi' target='_blank' className={styles.skillItemLink}><li className={styles.skillItem}>Testler</li></a>
+                <a href='https://www.google.com/search?q=Backend+as+a+Service' target='_blank' className={styles.skillItemLink}><li className={styles.skillItem}>Servis Olarak Arka Uç (BaaS)</li></a>
                 <a href='https://www.google.com/search?q=What+is+Postman' target='_blank' className={styles.skillItemLink}><li className={styles.skillItem}>Postman</li></a>
                 <a href='https://www.cisco.com/' target='_blank' className={styles.skillItemLink}><li className={styles.skillItem}>Cisco</li></a>
               </ul>
